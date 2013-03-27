@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GraphicsActivity!</string>
+    <string name="app_name">GL Intro</string>
+    <string name="movetex">Texture</string>
+    <string name="movetri">Move Triangle</string>
+    <string name="lighting">Lighting</string>
+    <string name="sensor">Accel.</string>
+    <string name="movelight">Light</string>
+    <string name="moveball">Sphere</string>
+    <string name="moveeye">Viewer</string>
+    <string name="movecoa">LookAt</string>
+    <string name="dance">Dance</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+    <LinearLayout
+        android:id="@+id/controlbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:baselineAligned="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <ToggleButton
+            android:id="@+id/tblight"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/lighting"
+            android:textOff="@string/lighting"
+            android:textOn="@string/lighting" />
+        <ToggleButton
+            android:id="@+id/tbsensor"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:hint="@string/sensor"
+            android:text="@string/sensor"
+            android:textOff="@string/sensor"
+            android:textOn="@string/sensor" />
+        <ToggleButton
+            android:id="@+id/tbanim"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/dance"
+            android:textOff="@string/dance"
+            android:textOn="@string/dance" />
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Move:" />
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioButton
+                        android:id="@+id/moveeye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/moveeye"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <RadioButton
+                        android:id="@+id/movefocus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movecoa"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <RadioButton
+                        android:id="@+id/moveball"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moveball"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <RadioButton
+                        android:id="@+id/movelight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movelight"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <RadioButton
+                        android:id="@+id/movetex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movetex"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="marquee"
+        android:text="1-finger swipe: move XY    2-finger swipe: pinch, zoom, or move Z"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@id/message"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/controlbox"
+        android:text="@string/hello" />
+</RelativeLayout>
